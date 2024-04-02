@@ -2,37 +2,139 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
+/* sidebar */
+
+.App {
   display: flex;
-  flex-direction: column;
+}
+
+.sidebar {
+background-color:rgb(218, 216, 216);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+width: 200px;
+padding: 20px;
+height: calc(100vh - 40px);
+display: flex;
+flex-direction: column;
+
+}
+
+.sidebar button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for task input  */
+
+.task-input-card {
+  background-color: #d8d7d7;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-input-form {
+  margin-bottom: 0;
+}
+
+.task-input {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* tasklist css */
+.task-list-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-checkbox {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-text {
+  flex-grow: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
 }
